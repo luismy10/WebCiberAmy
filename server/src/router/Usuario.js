@@ -552,6 +552,7 @@ router.get('/transacciones', async function (req, res) {
         });
 
     } catch (error) {
+        console.log(error)
         res.status(500).send("Error interno de conexión, intente nuevamente.");
     }
 });
